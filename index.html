@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Tip Calculator App</title>
+</head>
+<body>
+    <div class="m-container">
+    <h1>
+        SPLI <br> TTER
+    </h1>
+    <div class="container">
+        <div class="card-a">
+            <form style="height: 350; width: 450;">
+            <div class="case-a">
+                <label>Bill</label><br>
+                <input type="text" placeholder="$" id="billamount" style="width: 350px; height: 40px;">
+                
+                
+            </div>
+                <div style="margin-top: 50px;">
+                <label>Select Tip %</label>
+                </div>
+            <div class="case-b">
+                
+                <input type="button" value="5%" id="btn">
+                <input type="button" value="10%"  id="btn">
+                <input type="button" value="15%" id="btn">
+            
+            
+                <input type="button" value="25%"  id="btn">
+                <input type="button" value="50%" id="btn">
+                <input type="text" placeholder="Custom" id="btn">
+                
+            </div>
+
+            <div class="case-c">
+                <label>Number of People</label><br>
+                <input type="text" placeholder= "&#x1F464;" style="width: 350px; height: 40px;" id="nPeople">
+                
+            </div>
+            </form>
+        </div>
+
+        <div class="card-c"></div>
+        <div class="card-b">
+            
+            <div class="box-a">
+                <label>Tip Amount/ <em>person</em></label>
+                <input type="text" id="tipAmount" style="width: 350px; height: 40px;">
+            </div>
+            <div class="box-b">
+                <label>Total Amount/ <em>person</em></label>
+                <input type="text" id="totalBill" style="width: 350px; height: 40px;">
+            
+            </div>
+            <div class="box-c">
+                <input type="button" value="Reset" style="height: 40px; width: 350px; margin-top: 73px; background-color: hsl(172, 67%, 45%);">
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>  
