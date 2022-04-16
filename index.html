@@ -5,64 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calculator.css">
+    <!-- Title of App -->
     <title>Tip Calculator App</title>
 </head>
 <body>
     <div class="m-container">
+        <!-- The App Name of the Tip Calculator  -->
     <h1>
         SPLI <br> TTER
     </h1>
     <div class="container">
+        <!-- form input of data -->
         <div class="card-a">
             <form style="height: 350; width: 450;">
             <div class="case-a">
+                <!-- The initial bill Amount of goods/services rendered to customer -->
                 <label>Bill</label><br>
                 <input type="text" placeholder="$" id="billamount" style="width: 350px; height: 40px;">
                 
                 
             </div>
+            <!-- Tip Amount in Percentage of the Bill Amount -->
                 <div style="margin-top: 50px;">
                 <label>Select Tip %</label>
                 </div>
-            <div class="case-b">
+            <div class="case-b" id="btnclick">
                 
-                <input type="button" value="5%" id="btn">
-                <input type="button" value="10%"  id="btn">
-                <input type="button" value="15%" id="btn">
-            
-            
-                <input type="button" value="25%"  id="btn">
-                <input type="button" value="50%" id="btn">
-                <input type="text" placeholder="Custom" id="btn">
+                <button id="btn" value="0.05">5%</button>
+                <button id="btn" value="0.1">10%</button>
+                <button id="btn" value="0.15">15%</button>
+                <button id="btn" value="0.25">25%</button>
+                <button id="btn" value="0.50">50%</button>
+                <span ><input type="text" placeholder="Custom" pattern="[0-9]{0,}" id="btn"></span>
                 
             </div>
 
+            <!-- The number of persons to split the Tip Percentage -->
             <div class="case-c">
                 <label>Number of People</label><br>
+                <span>
                 <input type="text" placeholder= "&#x1F464;" style="width: 350px; height: 40px;" id="nPeople">
-                
+                </span>
             </div>
             </form>
         </div>
 
         <div class="card-c"></div>
+        <!-- Section of Bill Calculation -->
         <div class="card-b">
-            
+            <!-- Tip amount per Person -->
             <div class="box-a">
-                <label>Tip Amount/ <em>person</em></label>
-                <input type="text" id="tipAmount" style="width: 350px; height: 40px;">
+                <span>Tip Amount/<em>person</em></span>
+                <span id="tipAmount" style="width: 350px; height: 40px; font-size: 30px; margin-left: 60px;"> $0.00</span>
             </div>
+
+            <!-- Total amount of Bill plus the Tip Amount -->
             <div class="box-b">
-                <label>Total Amount/ <em>person</em></label>
-                <input type="text" id="totalBill" style="width: 350px; height: 40px;">
-            
+                <span>Total Amount/<em>person</em></span>
+                <span id="totalBill" style="width: 350px; height: 40px; font-size: 30px; margin-left: 50px;"> $0.00</span>
+                
             </div>
+
+            <!-- Reset Button that Returns all Calculation to its initial point -->
             <div class="box-c">
-                <input type="button" value="Reset" style="height: 40px; width: 350px; margin-top: 73px; background-color: hsl(172, 67%, 45%);">
+                <button type="reset" style="height: 40px; width: 350px; margin-top: 73px; background-color: hsl(172, 67%, 45%);">Reset</button>
             </div>
         </div>
     </div>
     </div>
+    <!-- The Script Functionality of the App -->
     <script src="./app.js"></script>
 </body>
 </html>  

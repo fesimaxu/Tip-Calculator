@@ -1,19 +1,25 @@
+/* Universal Style of the body of the Page */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+/* Style of the page Body */
 body{
     font-family: serif;
-    background-color: hsl(184, 14%, 56%);
+    font-size: 20px;
+    background-color: hwb(186 50% 38%);
 }
+/* Styling of App Name */
 h1{
     text-align: center;
 }
+/* Styling of the box container */
 .m-container{
     position: relative;
     
 }
+/* Styling of the App Container */
 .container{
     background-color: hsl(0, 0%, 100%);
     position: absolute;
@@ -28,12 +34,12 @@ h1{
     flex-direction: row;
     justify-content: space-between;
 }
+/* Styling of the form Input section */
 .card-a{
-    /* height: 350px;
-    width: 420px; */
     display: grid;
     grid-template-rows: auto;
 }
+/* Styling of the Calculation Section of the App */
 .card-b{
     background-color: #05595B;
     height: 350px;
@@ -42,9 +48,8 @@ h1{
     border: solid;
     border-radius: 10px;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 80px 50px;
     justify-content: space-between;
-
 }
 .case-b{
 
@@ -56,6 +61,7 @@ h1{
     
 }
 
+/* Styling of the Percentage Button to hover when clicked on */
 #btn:active {
     background-color: hsl(172, 67%, 45%);;
     transform: translateY(4px);
