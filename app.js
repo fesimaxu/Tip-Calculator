@@ -1,15 +1,12 @@
-let billBtn = document.getElementById('btn')
 
-billBtn.addEventListener("Click", function(){
+function tipCalculate(){
      let billamount = document.getElementById("billamount").value;
-     billamount = ""
      console.log(billamount)
 
      let billpercentage = document.getElementById("btn").value;
-
+     console.log(billpercentage)
 
      let nPeople = document.getElementById("nPeople").value;
-     nPeople = ""
      console.log(nPeople)
 
 
@@ -21,6 +18,18 @@ billBtn.addEventListener("Click", function(){
 
     document.getElementById("tipAmount").innerHTML = percentageAmount;
     document.getElementById("totalBill").innerHTML = total;
-})
+}
 
+tipCalculate()
+
+function btnclick(){
+    document.getElementById('btn').style.display = "block";
+}
+function resetClick(){
+
+    if(reset === total){
+        document.getElementById("reset") = tipCalculate();
+        return 0;
+    }
+}
 

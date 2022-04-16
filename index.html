@@ -21,7 +21,7 @@
             <div class="case-a">
                 <!-- The initial bill Amount of goods/services rendered to customer -->
                 <label>Bill</label><br>
-                <input type="text" placeholder="$" id="billamount" style="width: 350px; height: 40px;">
+                <input type="number" placeholder="$" id="billamount" style="width: 350px; height: 40px;">
                 
                 
             </div>
@@ -29,13 +29,13 @@
                 <div style="margin-top: 50px;">
                 <label>Select Tip %</label>
                 </div>
-            <div class="case-b" id="btnclick">
+            <div class="case-b" >
                 
-                <button id="btn" value="0.05">5%</button>
-                <button id="btn" value="0.1">10%</button>
-                <button id="btn" value="0.15">15%</button>
-                <button id="btn" value="0.25">25%</button>
-                <button id="btn" value="0.50">50%</button>
+                <button id="btn" onclick="btnclick()" value="0.05">5%</button>
+                <button id="btn" onclick="btnclick()" value="0.1">10%</button>
+                <button id="btn" onclick="btnclick()" value="0.15">15%</button>
+                <button id="btn" onclick="btnclick()" value="0.25">25%</button>
+                <button id="btn" onclick="btnclick()" value="0.50">50%</button>
                 <span ><input type="text" placeholder="Custom" pattern="[0-9]{0,}" id="btn"></span>
                 
             </div>
@@ -44,7 +44,7 @@
             <div class="case-c">
                 <label>Number of People</label><br>
                 <span>
-                <input type="text" placeholder= "&#x1F464;" style="width: 350px; height: 40px;" id="nPeople">
+                <input type="number" placeholder= "&#x1F464;" style="width: 350px; height: 40px;" id="nPeople">
                 </span>
             </div>
             </form>
@@ -68,7 +68,7 @@
 
             <!-- Reset Button that Returns all Calculation to its initial point -->
             <div class="box-c">
-                <button type="reset" style="height: 40px; width: 350px; margin-top: 73px; background-color: hsl(172, 67%, 45%);">Reset</button>
+                <button type="reset" onclick="resetClick()" style="height: 40px; width: 350px; margin-top: 73px; background-color: hsl(172, 67%, 45%);">Reset</button>
             </div>
         </div>
     </div>
