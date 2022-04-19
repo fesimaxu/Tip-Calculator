@@ -21,7 +21,7 @@
             <div class="case-a">
                 <!-- The initial bill Amount of goods/services rendered to customer -->
                 <label>Bill</label><br>
-                <input type="number" placeholder="$" id="billamount" style="width: 350px; height: 40px;">
+                <input type="text" placeholder="$ Enter bill amount" id="billamount" style="width: 350px; height: 40px;">
                 
                 
             </div>
@@ -29,22 +29,26 @@
                 <div style="margin-top: 50px;">
                 <label>Select Tip %</label>
                 </div>
-            <div class="case-b" >
-                
-                <button id="btn" onclick="btnclick()" value="0.05">5%</button>
-                <button id="btn" onclick="btnclick()" value="0.1">10%</button>
-                <button id="btn" onclick="btnclick()" value="0.15">15%</button>
-                <button id="btn" onclick="btnclick()" value="0.25">25%</button>
-                <button id="btn" onclick="btnclick()" value="0.50">50%</button>
-                <span ><input type="text" placeholder="Custom" pattern="[0-9]{0,}" id="btn"></span>
+            <div class="case-b">
+                <select style="width: 350px; height: 40px;" id="billpercentage">
+
+                    <option value="0">Choose Level of Services</option>
+                    <option value="0.05">Poor Services</option>
+                    <option value="0.10">Bad Services</option>
+                    <option value="0.15">Fair Services</option>
+                    <option value="0.25">Good Services</option>
+                    <option value="0.50">Very Good Services</option>
+                    <option value="0.60">Execellent Services</option>
+
+                </select>
                 
             </div>
 
             <!-- The number of persons to split the Tip Percentage -->
-            <div class="case-c">
+            <div class="case-c" style="margin-top: 45px;">
                 <label>Number of People</label><br>
                 <span>
-                <input type="number" placeholder= "&#x1F464;" style="width: 350px; height: 40px;" id="nPeople">
+                <input type="text" placeholder= "&#x1F464; Enter number of persons" style="width: 350px; height: 40px;" id="nPeople">
                 </span>
             </div>
             </form>
@@ -56,19 +60,19 @@
             <!-- Tip amount per Person -->
             <div class="box-a">
                 <span>Tip Amount/<em>person</em></span>
-                <span id="tipAmount" style="width: 350px; height: 40px; font-size: 30px; margin-left: 60px;"> $0.00</span>
+                <span id="tipAmount" style="width: 350px; height: 40px; font-size: 30px; margin-left: 60px;">0.00</span>
             </div>
 
             <!-- Total amount of Bill plus the Tip Amount -->
             <div class="box-b">
                 <span>Total Amount/<em>person</em></span>
-                <span id="totalBill" style="width: 350px; height: 40px; font-size: 30px; margin-left: 50px;"> $0.00</span>
+                <span id="totalBill" style="width: 350px; height: 40px; font-size: 30px; margin-left: 50px;">0.00</span>
                 
             </div>
 
             <!-- Reset Button that Returns all Calculation to its initial point -->
             <div class="box-c">
-                <button type="reset" onclick="resetClick()" style="height: 40px; width: 350px; margin-top: 73px; background-color: hsl(172, 67%, 45%);">Reset</button>
+                <button id="calculate" style="height: 40px; width: 350px; margin-top: 73px; background-color: hsl(172, 67%, 45%);">Calculate</button>
             </div>
         </div>
     </div>

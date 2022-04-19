@@ -1,35 +1,30 @@
 
-function tipCalculate(){
+function tipCalculator(){
+
+    // getting the value of the bill amount
      let billamount = document.getElementById("billamount").value;
-     console.log(billamount)
+ 
+     // getting the value of the bill percentge
+     let billpercentage = document.getElementById("billpercentage").value;
 
-     let billpercentage = document.getElementById("btn").value;
-     console.log(billpercentage)
+     // getting the value of the number of persons to split the tip
+     let nPeople = document.getElementById  ("nPeople").value;
 
-     let nPeople = document.getElementById("nPeople").value;
-     console.log(nPeople)
-
-
-    let percentageAmount = (billamount * nPeople)/billpercentage;
-    console.log(percentageAmount)
+    // getting the value of the tipamount
+    let tipAmount = (billamount * billpercentage)/nPeople;
+    tipAmount.toFixed(2)
     
-    let total = parseInt(billamount) + parseInt(tipAmount);
-    console.log(total)
-
-    document.getElementById("tipAmount").innerHTML = percentageAmount;
+    // getting the value of the total amount
+    let total = parseFloat(billamount) + parseFloat(tipAmount);
+    total.toFixed(2)
+    
+    document.getElementById("tipAmount").innerHTML = parseFloat(tipAmount);
     document.getElementById("totalBill").innerHTML = total;
 }
 
-tipCalculate()
-
-function btnclick(){
-    document.getElementById('btn').style.display = "block";
+// Calculate function 
+document.getElementById("calculate").onclick = function(){
+    tipCalculator();
 }
-function resetClick(){
 
-    if(reset === total){
-        document.getElementById("reset") = tipCalculate();
-        return 0;
-    }
-}
 

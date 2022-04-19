@@ -8,7 +8,7 @@
 body{
     font-family: serif;
     font-size: 20px;
-    background-color: hwb(186 50% 38%);
+    background-color: hsl(172, 67%, 45%);
 }
 /* Styling of App Name */
 h1{
@@ -51,7 +51,7 @@ h1{
     grid-template-rows: 80px 50px;
     justify-content: space-between;
 }
-.case-b{
+/* .case-b{
 
     margin-bottom: 50px;
     display: grid;
@@ -59,7 +59,7 @@ h1{
     grid-template-columns: 110px 110px 110px;
     grid-template-rows: repeat(2,1fr);
     
-}
+} */
 
 /* Styling of the Percentage Button to hover when clicked on */
 #btn:active {
